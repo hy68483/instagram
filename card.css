@@ -1,0 +1,226 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+ul,li{
+    list-style: none; 
+    /* 리스트 앞에 기호 없애는 용도*/
+}
+
+button.transparent-button {
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+
+.container{
+    width: 100%;
+    background-color: #f0f0f0;
+    padding: 20px 0;
+}
+
+article.card{
+    width: 600px;
+    margin: 20px auto;
+    margin-bottom: 60px;
+    background-color: #fff;
+    border: 1px solid #c0c0c0;
+    border-radius:3px;
+}
+
+/*** Header 시작 ***/
+
+article.card header{
+    height: 40px;
+    padding: 10px;
+}
+
+article.card header > div{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.circle-image {
+    height: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.circle-image > img{
+    height: 100%;
+    border-radius: 50%;
+}
+
+.card-username{
+    padding: 10px 0;
+    font-weight: 900;
+    line-height: 20px;
+    margin-left:5px;
+    font-size: 13px;
+}
+
+.option-more{
+    float: right;
+    padding: 7px;
+}
+
+
+/*** Header 종료료 ***/
+
+
+/*** CONTENT 시작 ***/
+
+.card-container {
+    padding: 5px 10px;
+
+}
+
+
+/*** 버튼 ***/
+.card-buttons {
+    padding: 0, 5px;
+    margin-top: 5px;
+}
+
+.card-buttons > div {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.card-buttons > div.last-card-button {
+    float: right;
+    margin-right: 0;
+}
+
+/*** 좋아요 ***/
+
+.card-likes{
+    padding: 5px;
+    font-size: 13px;
+    font-weight: 900;
+}
+
+/*** 본문 ***/
+
+.card-contents {
+    padding: 2px 5px;
+    font-size: 13px;
+}
+
+.card-contents li > div {
+    padding: 1px 0;
+}
+
+.card-contents li > div > span {
+    font-weight: 900;
+}
+
+.card-contents li.comment > div > button {
+    float: right;
+}
+
+.card-contents li.comment > div > button > img {
+    width: 12px;
+    margin-right: 5px;
+}
+
+/*** 시간 **/
+
+.card-time {
+    padding: 3px;
+    font-size: 11px;
+    color: #a0a0a0;
+}
+
+/*** 풋터 **/
+
+.card-comments {
+    position: relative;
+    height: 55px;
+    border-top: 1px solid #e0e0e0;
+}
+
+.card-comments input {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    outline: 0;
+    padding: 0 15px;
+    color: #606060;
+    box-sizing: border-box;
+}
+
+.card-comments > div {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.card-comments > div > button {
+    color: #0095f6;
+    opacity: 0.5;
+    padding: 10px 5px;
+}
+
+/*** 캐러셀 **/
+
+.card main .carousel {
+    width: 100%;
+    position: relative;
+}
+
+article.card main .carousel > div {
+    overflow: hidden;
+}
+
+article.card main .carousel ul {
+    width: 10000px;
+}
+
+article.card main .carousel ul > li {
+    display: inline-block;
+}
+
+article.card main .carousel ul > li img {
+    width: 600px;
+
+}
+
+.slide {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+}
+
+.slide img {
+    opacity: 0.75;
+}
+
+.slide-right {
+    right: 0;
+}
+
+.carousel footer {
+    position: absolute;
+    height: 20px;
+    text-align: center;
+    width: 100%;
+    bottom: -20px;
+}
+
+.carousel footer div {
+    width: 6px;
+    height: 6px;
+    background-color: #a8a8a8;
+    display: inline-block;
+    border-radius: 50%;
+
+}
+
+.carousel footer div.active {
+    background-color: #0095f6;
+}
